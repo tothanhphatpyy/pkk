@@ -1,11 +1,13 @@
+//----------------------------GAME ƒêUA XE-----------------
 #include <stdio.h>
-#include <string.h>
+#include <string.h >
 #include <stdlib.h>
 #include <time.h>
 #include <Windows.h>
 #include "console.h"
 #include <conio.h>
-//1 ham console.h
+
+//1. ham console.h
 int inputKey()
 {
 	if (_kbhit())
@@ -68,13 +70,14 @@ void TextColor (int color)
 {
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE) , color);
 }
+
 //2	
 //dinh nghia man hinh console
 #define consoleWidth 80
 #define consoleHeight 29
 #define roadWidth	39
 
-//3. Khai b·o cau tr˙c struct v‡ c·c bien th‡nh phan 
+//3. Khai b√°o cau tr√∫c struct v√† c√°c bien th√†nh phan 
 struct HDxe{
 	char hdxe[4][6];
 };
